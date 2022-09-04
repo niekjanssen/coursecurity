@@ -1,0 +1,21 @@
+.page-nav{
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width:100%;
+  padding:2vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.page-item.active .page-link {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.page-link {
+  color: black;
+}

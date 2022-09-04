@@ -1,0 +1,33 @@
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.modal-body .terminal{background-color:black;font-family:"Source Code Pro"; color:#ffffff; padding: 0.5em;align-self: stretch;}
+.terminal > .username{color:#00FF00;}
+.terminal > p{margin:0;}
+.terminal > p.command .path{color:#0000FF;}
+.terminal > p.command:before{content:"hacker@abcd1234";color:#00FF00;}
+.terminal > .command .path:before{content:":";color:#ffffff;}
+.terminal > .command .path:after{content:"$ "; color:#ffffff;}
+.terminal > p.msf .path:before{content:"msf6"; text-decoration:underline;}
+.terminal > p.msf .path:after{content:" > ";}
+.terminal > .green{color:#00CC00;}
+.terminal > .blue{color:#5555FF;}
+.terminal > .red{color:#ff0000;}
+.terminal:hover p:not(:hover), .terminal:hover p:not(:hover) span{color:#999999;}
+.terminal > p.command:hover::after, .terminal > p.msf:hover::after{padding-right:1em;content:" < Typed by you "; color:#ffffff; background-color:#FF0000;font-weight:bold;}
+.terminal > p.next:hover::after{padding-right:1em;content:" < Ready for your next command "; color:#000000; background-color:#00FF00;font-weight:bold;}
+.terminal > p.next:hover::before, .terminal > p.next:hover .path, .terminal > p.next:hover .path::before{background-color:#00FF00; color:#00FF00;}
+.terminal > p.next:hover .path::after{color:#000000;}
+.terminal > p.msf:hover:not(.next) .path, .terminal > p.command:hover:not(.next)::before, .terminal > p.command:hover:not(.next) .path, .terminal > p.command:hover:not(.next) .path::before{background-color:#FF0000;color:#FF0000;}
+.terminal > p.command:hover .path::after{content:"> "; font-weight:bold;}
+.terminal > p.msf:hover .path::after{color:#ffffff;font-weight:bold;}
+.terminal > p.command:hover, .terminal > p.msf:hover{background-color:#aa0000;}
+.terminal > p.next:hover{background-color:#00aa00;}
+.terminal > p.output:hover::after{content:"Output"; color:#000000; background-color:#CCCCFF; margin:0 2em; padding:0 0.5em; font-weight:bold;}
+.terminal > p.output:hover, p.filler:hover{background-color:#0000cc;}
+.terminal > p.filler:hover::after{content:"< Multiple Lines from Metasploit (Not displayed here)"; color:#000000; background-color:#CCCCFF; margin:0 2em; padding:0 0.5em; font-weight:bold;}
+.terminal > p.output:not(:hover) .explaination{display:none;}
+.terminal > p.output:hover .explaination{font-weight:bold;color:#000000; background-color:#CCCCFF; margin-left:1em; padding:0 0.5em; }

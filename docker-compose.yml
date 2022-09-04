@@ -1,0 +1,65 @@
+version: "3"
+networks:
+  no-internet:
+    driver: ipvlan
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+          ip_range: 172.28.6.0/24
+    internal: True
+    name: com
+  display:
+    driver: bridge
+    internal: True
+  extern:
+    driver: bridge
+services:
+  html5-desktop:
+    build:
+      context: ./
+      dockerfile: ./html5-desktop/Dockerfile
+    ports:
+      - "9070:8080"
+      - "9069:5500"
+    networks:
+      - display
+      - extern
+    environment:
+      - DISPLAY_WIDTH=1080
+      - DISPLAY_HEIGHT=810
+    restart: unless-stopped
+  hosted-desktop:
+    build: ./hosted-desktop
+    networks:
+      - display
+      - no-internet
+    environment:
+      - DISPLAY=html5-desktop:0.0
+    depends_on:
+      - html5-desktop
+    restart: unless-stopped
+  home247:
+    build: ./home247
+    container_name: home247
+    hostname: portal.home247.com
+    domainname: portal.home247.com
+    networks:
+      - no-internet
+    restart: unless-stopped
+  pia-legacy:
+    build: ./pia-legacy
+    container_name: pia-legacy
+    hostname: drives.pia.dk
+    domainname: drives.pia.dk
+    networks:
+      - no-internet
+    restart: unless-stopped
+  sharedot:
+    build: ./sharedot
+    container_name: sharedot
+    hostname: sharedot.com
+    domainname: sharedot.com
+    networks:
+      - no-internet
+    restart: unless-stopped

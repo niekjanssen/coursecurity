@@ -1,0 +1,74 @@
+version: "3"
+networks:
+  extern:
+    external:
+      name: cloud_default
+  no-internet:
+    driver: ipvlan
+    ipam:
+      driver: default
+    internal: True
+  display:
+    driver: bridge
+    internal: True
+services:
+  html5-desktop:
+    image: html5-desktop
+    networks:
+      - display
+      - extern
+    environment:
+      - DISPLAY_WIDTH=1080
+      - DISPLAY_HEIGHT=810
+    mem_limit: 500m
+    memswap_limit: 500m
+    cpus: 0.2
+    restart: unless-stopped
+  hosted-desktop:
+    image: hosted-desktop
+    networks:
+      - display
+      - no-internet
+    environment:
+      - DISPLAY=html5-desktop:0.0
+    depends_on:
+      - html5-desktop
+    mem_limit: 1024m
+    memswap_limit: 1024m
+    cpus: 0.7
+    restart: unless-stopped
+  home247:
+    image: home247
+    hostname: portal.home247.com
+    domainname: portal.home247.com
+    networks:
+      no-internet:
+        aliases:
+          - home247.com
+          - www.home247.com
+    mem_limit: 55m
+    cpus: 0.0125
+    restart: unless-stopped
+  pia-legacy:
+    image: pia-legacy
+    hostname: drives.pia.dk
+    domainname: drives.pia.dk
+    networks:
+      no-internet:
+        aliases:
+          - www.drives.pia.dk
+    mem_limit: 55m
+    cpus: 0.0125
+    restart: unless-stopped
+  sharedot:
+    image: sharedot
+    hostname: sharedot.com
+    domainname: sharedot.com
+    networks:
+      no-internet:
+        aliases:
+          - sharedot.com
+          - www.sharedot.com
+    mem_limit: 55m
+    cpus: 0.0125
+    restart: unless-stopped

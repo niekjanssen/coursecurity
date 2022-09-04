@@ -1,0 +1,98 @@
+/* Customized stylesheet for creation of legacy system */
+:root {
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  margin: 0%;
+  padding: 0%;
+  width: 99vw;
+  border: 0%;
+  background-color: rgb(202, 199, 199);
+  display: flex;
+  flex-direction: row;
+  border-bottom: black 2px solid;
+  margin-bottom: 1vh;
+}
+
+.tree-view {
+  max-width: 8vw;
+  min-width: 6vw;
+  height: 79vh;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-container .top {
+}
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin: 2px;
+}
+
+.top-icon {
+  align-items: center;
+  margin: 15px;
+  align-content: center;
+  align-self: center;
+}
+
+.top-icon p {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+  font-size: 9px;
+  margin: 0;
+  text-align: center;
+}
+
+.top-icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content {
+  box-shadow: inset 1px 1px 3px black;
+  border: black 1px solid;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 95%;
+  height: 80vh;
+  background-color: rgb(177, 174, 174);
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.window {
+  position: relative;
+  left: 42%;
+  top: 35%;
+}
+
+.password {
+  -webkit-text-security: disc !important;
+}
+
+#text17 {
+  max-width: 10vw;
+  min-width: 8vw;
+  font-weight: bold;
+}

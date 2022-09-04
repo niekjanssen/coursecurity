@@ -1,0 +1,19 @@
+<svg width="173.72" height="81.787" version="1.1" viewBox="0 0 45.963 21.64" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-46.104 -20.642)" fill="#fff">
+        <g fill="#fff">
+            <path transform="scale(.26458)"
+                d="m306.7 78.016-6.2187 12.328-35.047 69.459h12.439l28.826-57.133 28.828 57.133h12.438l-35.047-69.459z"
+                stop-color="#fff" stroke-linejoin="round" stroke-width="2.4688"
+                style="paint-order:stroke markers fill" />
+            <rect x="46.104" y="21.114" width="2.6458" height="21.167" stop-color="#fff" stroke-linejoin="round"
+                stroke-width=".56684" style="paint-order:stroke markers fill" />
+            <path
+                d="m51.131 21.114v2.6936h6.68e-4c1.945 0 3.4929 1.5479 3.4929 3.4932s-1.5478 3.4935-3.4929 3.4935h-6.68e-4v2.6933h6.68e-4c3.4006 0 6.1861-2.7858 6.1861-6.1868-3e-6 -3.401-2.7855-6.1868-6.1861-6.1868h-6.68e-4z"
+                color="#fff" color-rendering="auto" dominant-baseline="auto" image-rendering="auto"
+                shape-rendering="auto" solid-color="#fff" stop-color="#fff"
+                style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke markers fill;shape-margin:0;shape-padding:0;text-decoration-color:#fff;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" />
+            <rect x="60.941" y="21.114" width="5.2917" height="21.167" stop-color="#fff" stroke-linejoin="round"
+                stroke-width=".80164" style="paint-order:stroke markers fill" />
+        </g>
+    </g>
+</svg>

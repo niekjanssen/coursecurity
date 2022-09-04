@@ -1,0 +1,57 @@
+.guide {
+  width: calc(100vw - var(--ratio-width));
+  height: calc(100vh - 57px);
+  position: absolute;
+  top: 57px;
+  left: var(--ratio-width);
+  display: flex;
+  flex-direction: column;
+}
+.guide .tasks{
+  overflow-y: auto;
+  height:100%;
+}
+.guide .header{
+  top: 0;
+  position: sticky;
+  width: 100%;
+  padding: 0.5rem;
+}
+.guide .header h1{
+  text-align: center;
+  padding: 0.5rem;
+}
+.guide .task .icon{
+    padding: 3%;
+}
+.guide .step .icon{
+  height:1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.15em;
+}
+
+.guide .step small svg, .guide .step b svg{
+  height: 1em;
+  display:inline-block;
+}
+.guide .icon, .guide .progress-bar, .guide .task{
+  user-select: none;
+}
+.hint{display: inline;color: var(--bs-primary);border-bottom: 1px dotted;}
+.hint .inner{
+  display: none;
+}
+.hint:hover .inner {
+  display: inline-block;
+  background-color: var(--bs-primary);
+  width: 13rem;
+  margin-right: -13rem;
+  color: white;
+  position: relative;
+  top: -1.5rem;
+  text-align: center;
+  border-radius: 2px;
+  height: 3.5rem;
+  margin-top: -5rem;
+  padding: 0.4rem;
+}

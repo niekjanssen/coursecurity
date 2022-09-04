@@ -1,0 +1,4 @@
+mv /var/www/html/index.html /var/www/html/index2.html
+mv /var/www/html/404.html /var/www/html/index.html
+mv /var/www/html/alive /var/www/html/dead
+rm -r /root/data/

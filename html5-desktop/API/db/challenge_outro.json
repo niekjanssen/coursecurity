@@ -1,0 +1,33 @@
+{
+  "8738-37cc": {
+    "Congratulations": {
+      "title": "Success!",
+      "paragraph": "<p><b>You've managed to break-in to PIA!</b></p><p>So even though one of PIA's systems was maintained by a large software company and up-to-date, an old -perhaps even forgotten- system was vulnerable because it had not been updated in a while.</p><p>The information you've found so far may not be shocking or highly classified, it was not supposed to be public, and it might help you get access to other information.</p><p><img style=\"width:100%;\" src=\"https://unsplash.com/photos/-MMeeP7pjbE/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjUwMjcwMTkx&force=true&w=1920\"/></p>"
+    },
+    "Danger": {
+      "title": "What is the danger?",
+      "paragraph": "<p>Flaws are discovered in software all the time, and security holes are normally fixed quickly after they've been found. This applies to both large servers, but also apps on your phone, or software running on your own computer.</p><p>However, until a computer is actually updated the security hole will persist. With the update the problem often becomes public, so until the update is applied your device is vulnerable to a problem that the whole world knows about.</p><p>Since many applications and devices are connected through a company network, even if a seemingly small or unimportant system gets compromised it can be the gate towards bigger issues.</p> <p><img src=\"https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"/></p>"
+    },
+    "Prevention": {
+      "title": "What can be done?",
+      "paragraph": "<p>Company-wide systems like this example are ofcourse the responsibility of IT Specialists. However as mentioned before, the same principles apply on a smaller scale as well.</p><p>As a hacker you only need one small mistake to get in, and often you can move further up the network from that moment. A single laptop that isn't updated can be enough to get access and do damage beyond that one device. Ofcourse there are company wide security measures, but their effectiveness is greatly reduced if individuals don't take care of their IT Security.</p><p>As an individual it's thus important to update your applications and devices as soon as possible, and to be careful with applications</p> <p><img src=\"https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"/></p>"
+    }
+  },
+  "8738-38dd": {
+    "OutroText1": {
+      "title": "Congratulations",
+      "paragraph": "<p> Great job! You've managed to break into all systems and gather all the information needed! And now a well deserved break from hacking seems reasonable! You will not need to use the information gathered any furter. However, a real hacker could use the information gathered for much more...</p> <p> A hacker could you use the information to: <ul><li>Create personalised phising emails to specfic targets (Spear phishing) </li> <li>Use the information gathered as a whole (about departments, employees etc.) to target important personell by winning their trust with \"inside information\"</li> <li> Black mailing </li> <li> ...And much more! </li> </ul> </p> <p> However, all that is for another day. </p> <p><img style=\"width:100%;\" src=\"https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"/> </p>",
+      "img": "url"
+    },
+    "OutroText2": {
+      "title": "What is the danger?",
+      "paragraph": "<p>Authentication, such as a password, is essential for making the internet function probably. Today everyone uses many different systems, with different purposes. These systems greatly vary in the level of security protecting them. According to the sensitivity of the data in a system. </p> <p>Even though users are well aware that some systems are more important that others, re-using passwords across different platforms and systems is very common. Thereby making themselves vulnerable towards Password stuffing as seen in the prior challenge.</p> <p>A small webshop getting hacked may not be the end of the world. Though, if you use the same password for everything work-related, one data-leak at a small supplier can expose your username (email address) and password to way more important, and internal systems.</p> <p> <img style=\"width:100%;\" src=\"https://images.pexels.com/photos/5829726/pexels-photo-5829726.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"/> </p>",
+      "img": "url"
+    },
+    "OutroText3": {
+      "title": "What can be done?",
+      "paragraph": "<p>Luckily, more and more measures are created to enhance the security around authentication. Such as multifactor authentication, where the users are asked to use an additional token or metric to login. E.g. a code they receive over SMS, or using a fingerprint.</p> <p>However technical solutions can only be effective when combined with careful users.</p> <p> When creating passwords you can follow the guidelines made by the American Government for it's secret services <a href =\"https://pages.nist.gov/800-63-3/sp800-63b.html\" target=_blank>The National Institute of Standards and Technology (nist)</a></p> The most important points to remember when creating a password: <ul><li>Always make passwords as long as possible. Absolute minimum is 8 characters long. It's more effective to add a few more letters than to use special characters</li><li>Never use the same password across different platforms/websites. Never!</li><li>When switching passwords don't follow a specific pattern. (Like seen in the assignment)</li></ul></p> <p> <img style=\"width:100%;\" src=\"https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"/> </p>",
+      "img": "url"
+    }
+  }
+}

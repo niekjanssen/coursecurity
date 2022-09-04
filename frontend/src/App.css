@@ -1,0 +1,7 @@
+.desktop {
+  width:  var(--ratio-width);
+  height: var(--ratio-height);
+  border: none;
+  border-image-width: 0;
+  background-color: black;
+}

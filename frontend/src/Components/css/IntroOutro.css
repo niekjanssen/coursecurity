@@ -1,0 +1,19 @@
+.modal-header {
+  background-color: var(--bs-primary);
+  color:white;
+}
+.title{
+  background-color: #ac9acd;
+}
+.title h1{
+  color: var(--bs-primary);
+  font-size:1.5rem;
+  text-align:center;
+  padding:0.25rem;
+}
+
+.modal-body p img{
+  object-fit: cover;
+  width:45vw;
+  height:15.75vw;
+}

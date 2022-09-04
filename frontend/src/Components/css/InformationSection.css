@@ -1,0 +1,38 @@
+.informationContainer {
+  width: 45vw;
+  padding-top: 0.5vh;
+  background-color: white;
+}
+
+.infoSection {
+  color: var(--bs-primary);
+  margin-bottom: calc(72px + 6vh);
+}
+
+.infoSectionTop {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoSectionTop img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.infoSection p {
+  font-size: larger;
+}
+
+.switch {
+  width: 20vw;
+  height: 15vh;
+  padding: 1%;
+  font-weight: bold;
+  display: inline-flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35%;
+}

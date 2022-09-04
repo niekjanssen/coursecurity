@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+:root {
+  --ratio-width: calc((100vh - 57px) / 3 * 4);
+  --ratio-height: calc(100vh - 57px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@400;800&display=swap');
+
+code{
+  color:#59359a !important;
+}
+
+$primary: #59359a;
+@import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,19 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C   = US
+ST  = California
+L   = Silicon Valley
+O   = Maxisoft Inc.
+OU  = Home 24/7
+CN  = portal.maxisoft.com
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = portal.maxisoft.com
+DNS.2 = home247.com

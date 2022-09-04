@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<!-- html for creation of pia legacy page.
+Making use of 98 windows styling.
+98.css
+Copyright (c) 2020 Jordan Scales <thatjdanisso.cool>
+https://github.com/jdan/98.css/blob/master/LICENSE -->
+
+<head>
+  <title>PIA Shared Drives</title>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/98.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex-row-container top">
+      <div class="logo-container">
+        <svg width="173.72" height="81.787" version="1.1" viewBox="0 0 45.963 21.64" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(-46.104 -20.642)">
+            <g>
+              <path transform="scale(.26458)"
+                d="m306.7 78.016-6.2187 12.328-35.047 69.459h12.439l28.826-57.133 28.828 57.133h12.438l-35.047-69.459z"
+                stop-color="#000000" stroke-linejoin="round" stroke-width="2.4688"
+                style="paint-order: stroke markers fill" />
+              <rect x="46.104" y="21.114" width="2.6458" height="21.167" stop-color="#000000" stroke-linejoin="round"
+                stroke-width=".56684" style="paint-order: stroke markers fill" />
+              <path
+                d="m51.131 21.114v2.6936h6.68e-4c1.945 0 3.4929 1.5479 3.4929 3.4932 0 1.9453-1.5478 3.4935-3.4929 3.4935h-6.68e-4v2.6933h6.68e-4c3.4006 0 6.1861-2.7858 6.1861-6.1868-3e-6 -3.401-2.7855-6.1868-6.1861-6.1868h-6.68e-4z"
+                color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto"
+                shape-rendering="auto" solid-color="#000000" stop-color="#000000" style="
+                    font-feature-settings: normal;
+                    font-variant-alternates: normal;
+                    font-variant-caps: normal;
+                    font-variant-east-asian: normal;
+                    font-variant-ligatures: normal;
+                    font-variant-numeric: normal;
+                    font-variant-position: normal;
+                    font-variation-settings: normal;
+                    inline-size: 0;
+                    isolation: auto;
+                    mix-blend-mode: normal;
+                    paint-order: stroke markers fill;
+                    shape-margin: 0;
+                    shape-padding: 0;
+                    text-decoration-color: #000000;
+                    text-decoration-line: none;
+                    text-decoration-style: solid;
+                    text-indent: 0;
+                    text-orientation: mixed;
+                    text-transform: none;
+                    white-space: normal;
+                  " />
+              <rect x="60.941" y="21.114" width="5.2917" height="21.167" stop-color="#000000" stroke-linejoin="round"
+                stroke-width=".80164" style="paint-order: stroke markers fill" />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="top-icon">
+        <img src="/img/directory_closed-4.png" />
+        <p>Open database</p>
+      </div>
+      <div class="top-icon">
+        <img src="/img/calendar-0.png" />
+        <p>Open Calendar</p>
+      </div>
+      <div class="top-icon">
+        <img src="/img/search_directory-5.png" />
+        <p>Search</p>
+      </div>
+      <div class="top-icon">
+        <img src="/img/recycle_bin_empty-4.png" />
+        <p>Delete</p>
+      </div>
+      <div class="top-icon">
+        <img src="/img/printer-3.png" />
+        <p>Print current page</p>
+      </div>
+      <div class="top-icon">
+        <img src="/img/settings_gear-2.png" />
+        <p>Settings</p>
+      </div>
+    </div>
+
+    <div class="flex-row-container content">
+      <div class="flex-column-container">
+        <ul class="tree-view">
+          <li>Members</li>
+          <li>Member description</li>
+          <li>
+            Events
+            <ul>
+              <li>All events</li>
+              <li>Participants</li>
+              <li>Locations</li>
+            </ul>
+          </li>
+          <li>
+            <details close>
+              <summary>Members</summary>
+              <ul>
+                <li>Member details</li>
+                <li>
+                  <details>
+                    <summary>Payment</summary>
+                    <ul>
+                      <li>Avoid</li>
+                      <li>
+                        <details>
+                          <summary>At</summary>
+                          <ul>
+                            <li>Avoid</li>
+                            <li>At</li>
+                            <li>All</li>
+                            <li>Cost</li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>All</li>
+                      <li>Cost</li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>Help</li>
+          <li>PIA</li>
+        </ul>
+      </div>
+
+      <div class="page-content">
+        <h1></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="window" style="width: 320px">
+      <div class="title-bar">
+        <div class="title-bar-text">Login</div>
+      </div>
+      <div class="window-body">
+        <p>Before gaining access you have to login</p>
+
+        <div class="field-row">
+          <label for="text17">Username</label>
+          <input id="text17" type="text" />
+        </div>
+        <div class="field-row">
+          <label for="text17">Password</label>
+          <input id="text17" class="password" type="text" />
+        </div>
+      </div>
+      <button onclick="loginButton()">Login</button>
+    </div>
+  </div>
+
+  <script>
+    function loginButton() {
+      alert("Incorrect credentials");
+    }
+    // Function is used to check for alive file. If alive file is gone the page will crash.
+    setInterval(() => {
+      fetch(`alive?${Math.floor((Math.random() * 99999) + 10000)}`
+      ).then((result) => {
+        if (result.status === 404) {
+          window.location.href = `${window.location.href}/?${Math.floor((Math.random() * 9) + 1)}`
+        }
+      })
+    }, 1000);
+  </script>
+</body>
+
+</html>

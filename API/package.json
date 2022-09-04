@@ -1,0 +1,24 @@
+{
+  "name": "guidance_api",
+  "version": "1.0.0",
+  "description": "The api is managing the helping guidance for the users. Here one can fetch the different aidings needed to complete the challenges. Additionally the API is also used to keep track over witch challenges that have been completed.",
+  "main": "guidance_api.js",
+  "scripts": {
+    "start": "node guidance_api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ITSecAwareness"
+  },
+  "keywords": [
+    "API",
+    "Guidance"
+  ],
+  "author": "Jens Christian Dalgaard & Niek Janssen",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
