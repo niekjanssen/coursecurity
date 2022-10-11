@@ -194,6 +194,18 @@
     },
     "complete": false
   },
+  "8275-hu99": {
+    "title": "Password stuffing",
+    "description": "During the intro you learned about different ways of attacks towards passwords. Let's use password stuffing to try to breach the file. Remember Password stuffing involves using else where found credentials and try to stuff them into the system.",
+    "steps": {
+      "7837-hu99-72df": {
+        "instruction": "Try to see if you can log in using any of the found users. Try SMF or VLA.",
+        "explaination": "If you're not successfull go to next step.",
+        "complete": false
+      }
+    },
+    "complete": false
+  },
   "8275-io91": {
     "title": "Creative Password stuffing",
     "description": "When password stuffing the successrate is often very low, but luckily you only need to be lucky once.",
